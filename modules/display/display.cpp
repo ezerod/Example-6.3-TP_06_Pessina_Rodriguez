@@ -77,6 +77,8 @@ typedef struct{
 } pcf8574_t;
 
 //=====[Declaration and initialization of public global objects]===============
+//GRUPO: Pines asociados al display (D0 a D9). 8 bits de datos y 2 de control
+
 
 DigitalOut displayD0( D0 );
 DigitalOut displayD1( D1 );
@@ -89,6 +91,8 @@ DigitalOut displayD7( D7 );
 DigitalOut displayRs( D8 );
 DigitalOut displayEn( D9 );
 
+//GRUPO: Pines asociados a la interfaz I2C (D14->SDA, D15->SCL).
+//GRUPO: La interfaz utilizada es I2C. Donde el Manager es la Nucleo y el slave es el micro PCF8574.
 I2C i2cPcf8574( I2C1_SDA, I2C1_SCL ); 
 
 //=====[Declaration of external public global variables]=======================
