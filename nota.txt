@@ -1,0 +1,1 @@
+se observa que la comunicacion se realiza segun lo esperado, primero se indica a la direccion a la que se escribe, luego se manda el paquete de 8 bits de datos
